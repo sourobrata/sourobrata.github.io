@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple Product Page</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="product-card">
+      <img
+        src="https://picsum.photos/id/225/400/300"
+        alt="Product Image"
+        class="product-image"
+      />
+
+      <h1 class="product-title">Minimal Tea Pot</h1>
+
+      <p class="product-description">
+        A sleek, modern tea pot for seamless brewing.
+        Perfect for home and cafe.
+      </p>
+
+      <div class="price">₹1,999</div>
+
+      <!-- Quantity Selector -->
+      <div class="quantity-container">
+        <label for="quantity">Quantity:</label>
+        <select id="quantity">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+      </div>
+
+      <button id="addToCartBtn" class="btn">
+        Add to Cart
+      </button>
+
+      <p id="cartMessage" class="cart-message"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
