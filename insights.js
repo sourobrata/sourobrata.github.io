@@ -6,7 +6,6 @@
       window.insights.init({
         clientKey: 'cl_fdfc0147-6dc7-4c9a-8727-dc430242bded'
       });
-      window.insights.track('PageView');
     };
     document.head.appendChild(script);
   })();
