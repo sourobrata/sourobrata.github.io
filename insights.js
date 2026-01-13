@@ -1,11 +1,12 @@
 // Load and initialize Uniqode Insights SDK
 (function() {
     var script = document.createElement('script');
-    script.src = 'https://q.cdn.uniqode.com/insights/staging/v1/latest/sdk.js';
+    script.src = 'https://cdn.uniqode.com/insights/pixel.js';
     script.onload = function() {
       window.insights.init({
-        clientKey: 'cl_a20be94d-0f36-4895-ae67-73c71d622762'
+        clientKey: 'cl_fdfc0147-6dc7-4c9a-8727-dc430242bded'
       });
+      window.insights.track('PageView');
     };
     document.head.appendChild(script);
   })();
